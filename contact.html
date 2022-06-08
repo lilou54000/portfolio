@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pauline Abadie</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style1440.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="iam">
+          <img src="xavatar.jpeg" alt="" class="avatar">
+        </div>
+        <div>
+        <h1 class="name">Pauline Abadie</h1>
+        <h1 class="name">Développeuse Fullstack junior</h1>
+    </div>
+        <div class="elements">
+          <div class="buttonaction"> 
+            <a href=index.html><button>Retourner à l'accueil</button></a>
+            <a href=scripts/download.php>
+                <button type="image" src="porfolio/P.Abadie.cv.jpeg" alt="Submit button"> Téléchargez mon CV</button></a>
+        </div>
+    </div>
+       </header>
+
+    <form action="/mail-php" method="post">
+        <div class="formulaire">
+            <label for="name" class="dateContact">Votre nom :</label>
+            <input type="text" id="name" name="user_name" class="inputContact">
+        </div>
+        <div class="formulaire">
+            <label for="mail"  class="dateContact"> Votre e-mail&nbsp;:</label>
+            <input type="email" id="mail" name="user_mail" class="inputContact">
+        </div>
+        <div class="formulaire">
+            <label for="msg"  class="dateContact">Votre message :</label>
+            <textarea id="msg" name="user_message" class="textContact"></textarea>
+        </div>
+        
+        <div class="button  buttonform">
+            <button type="submit">Envoyer le message</button>
+        </div>
+       
+         </form>
+
+
+
+       <footer>
+        <p class="ML"> Mentions legales</p>
+    </footer>
+
+
+</body>
+
+</html>

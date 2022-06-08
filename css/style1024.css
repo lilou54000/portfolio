@@ -1,0 +1,517 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+    --background-color: #111;
+    --section-background: #3b3a3a;
+    --text-color: #ededed;
+    --title-color: #50a8d8;
+    }
+    }
+
+  @media screen and (min-width: 1024px) {
+    
+    
+body{
+--color-blue:rgb(21, 100,186);
+--color-yellow:rgb(238,210,8);
+--color-body: rgba(153, 245, 223, 0.3) ;
+--color-red:rgb(235, 12,12);
+--color-green: rgb(3, 87, 3);
+
+font-family: 'Roboto', sans-serif;
+margin: auto;
+
+}
+ /*-----------header----------------*/
+header{
+    background-color: var(--color-blue);
+    position:static;
+    font-size: 30px ;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+
+}
+
+/*intro*/
+ #nameforcompu{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+.iam{
+    margin: 5px;
+    position: fixed;
+    top:20px;
+    left: 40px;
+}
+.avatar{
+width: 130px;
+height: 130px;
+border-radius: 70px;
+}
+
+.name{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/*button*/
+.elements{
+    width: 70%;
+    margin: auto;
+}
+
+/*---nav-----*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px auto;
+    padding:  10px 5px 10px 0;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    width: 80%;
+    margin-right: 10px ;
+    text-align: center;
+    gap: 5px;
+
+    
+}
+
+li{
+    list-style: none;
+    background-color: var(--color-red);
+    color: white;
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+*p{
+    margin-bottom: 2px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+button{
+background-color: var(--color-yellow);
+border: 0;
+border-radius: 25px;
+
+color: black;
+font-weight: bold;
+font-size: 20px;
+
+height: 40px;
+width: max-content;
+margin:0;
+padding: 5px;
+}
+
+button:hover{
+background-color: var(--color-green);
+ color: white;
+ font-weight: bold;
+ border: 0;
+border-radius: 25px;
+height: 40px;
+width: max-content;
+ }
+
+.buttonaction{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 0;
+}
+
+/*barre modif*/
+.UX{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+}
+
+
+/*----------theme-----------*/
+.user{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.theme{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+    
+}
+p.colortheme{
+    color: var(--color-blue);
+    font-size: 40px;
+    margin: 5px;
+}
+
+/*----buton dark style----*/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 70px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #checkbox{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--color-blue);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 50px;
+    width: 50px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--color-blue);
+    border: 4px solid var(--color-blue);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: none;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(60px);
+    -ms-transform: translateX(60px);
+    transform: translateX(60px);
+    background-color: white;
+    
+
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 60px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/*----demi-lune--  A FUTUR
+    position: absolute;
+    top: 68%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    box-shadow: -15px 15px 0 5px ;
+    border-color: var(--color-blue) ;
+    border-radius: 50%;
+  }
+*/
+/*----------langues------*/
+.userfunction{
+    font-size: 25px;
+    color: var(--color-blue);
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px;
+}
+
+
+.langues{
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    margin: 0;
+ }
+
+.speak{
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+}
+
+.Espagnol {
+      background-image: url("spain.png");
+      background-position: center;
+    
+}
+.English{
+    background-image: url("Unitedkingdom.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Portugues{
+    background-image: url("portugal.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ /*------------- main-------------*/
+ main{
+   /*  background-color: var(--color-body);*/
+     width: 94%;
+     margin:0;
+     padding: 5px;
+
+ }
+
+ p{
+     color: black;
+     
+ }
+
+ section{
+     width: 75%;
+     margin: 5px;
+     text-align: justify;
+     padding: 10px 15px;
+     border: var(--color-blue) solid 10px;
+     border-radius: 25px;
+     background-color: white;
+ }
+
+.who,.projets, .work{
+float:right;
+
+ }
+
+ .webForm,.univ, .others
+ {
+    float:left;
+    
+     }
+.Titlepart{
+    background-color: var(--color-red);
+    color: white;
+    height: max-content;
+    width: max-content;
+    font-size: 25px;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+    text-align: left;
+    border-radius: 25px;
+}
+
+.date{
+    font-size: 18px;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.job{
+    font-size: 18px;
+    text-align:left;
+    padding-right: 25px;
+    
+}
+
+
+.what{
+    font-size: 15px;
+    text-align: left;
+    margin: 2px;
+
+
+}
+.where{
+    color: var(--color-blue);
+    font-size: 15px;
+    text-align: right;
+    margin: 2px;
+
+}
+/*-------------description--------------*/
+
+.description{
+     color: var(--color-blue);
+     padding: 10px 5px;
+     font-size: 16px;
+}
+
+/*--------------webFormation--------------*/
+.webForm{
+    background-color:white;
+}
+.oclock{
+    color: var(--color-white);
+    font-size: 20px;
+    background-color: var(--color-yellow);
+}
+.oclock:hover{
+    color: var(--color-red);
+    background: none;
+    font-size: 25px;
+}
+
+
+/*logos*/
+.competences{
+    border: var(--color-green) solid 4px;
+    border-radius: 25px;
+    margin: 5px auto ;
+    padding: 5px;
+    width: max-content;
+    
+}
+ #techknow{
+display: flex;
+flex-direction: row;
+
+ }
+
+.logosalign{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.elementslogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 0px;
+    
+}
+
+img.logo{
+    width: max-content;
+    height: 40px;
+    border-radius: none;
+    }
+
+.namelogo{
+    font-size: 15px;
+    padding: 2px;
+    color: var(--color-blue);
+    font-weight: bold;
+}
+
+.explicationlogo {
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.AGIL{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*---------------projet---------------*/
+
+span{
+    font-weight:bold ;
+    color: var(--color-red); }
+h5{
+    color: var(--color-blue);
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+h6{
+    font-size: 20px ;
+    text-align: center;
+    text-decoration: underline;
+    color: var(--color-green);
+    margin: 5px;
+}
+
+.miniature{
+     height: 100px;
+     width: 150px;
+ }
+
+/*-----others knows-----*/
+.blocknow{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+ /*footer*/
+
+footer{
+    background-color: var(--color-blue);
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.ML{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+
+ }

@@ -1,0 +1,72 @@
+/**************dark theme**********/
+
+/*color*/
+    body.dark{
+    transition: 0.5s;
+    background-color: var(--background-color);
+    color: white;
+}
+    img.dark {
+    filter: grayscale(20%);
+    }
+    
+section.dark{
+    background:grey;
+    transition: 0.5s;
+}
+
+header.dark{
+    background-color: var(--section-background);
+    transition:  background 0.5s;
+}
+h1.dark{
+    color: var(--color-green);
+}
+
+/*action bare*/
+
+.mode-switch
+{
+    width: 120px;
+    height: 60px;
+    border: solid 3px var(--color-blue);
+
+    
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.mode-switch::before
+{
+   content:'\2600';
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+  
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    border: var(--color-blue) solid 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+
+    background-color: var(--color-yellow);
+}
+.mode-switch.active::before
+{
+    content: '\01F319';
+    left: 100%;
+
+    /*tranforme : horizontal, verticla via parent element*/
+    transform: translate(-58px,-50%) rotate(360deg);
+    border: solid 3px var(--color-yellow);
+    background-color: var(--color-blue);
+}
+
+
