@@ -12,11 +12,16 @@ du fait que je parle 4 langues, je souhaitais mettre le site dans chacune de ces
 
 ## Etape 3
 découpage en template et dynamisation du site
-
+en cours
 
 ## Etape 4
 fonction dark mode
 
+## Etape 5
 slider de projets personnels
+
+## Etape 6
 mise en place de la photo évolutive
+
+## Etape 7
 mise en place desdiferentes langues
