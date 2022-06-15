@@ -29,7 +29,7 @@ h1.dark{
 {
     width: 120px;
     height: 60px;
-    border: solid 3px var(--color-blue);
+    border: solid 3px var(--color-header-bg);
 
     
     border-radius: 50px;
@@ -47,7 +47,7 @@ h1.dark{
     width: 50px;
     height: 50px;
     line-height: 30px;
-    border: var(--color-blue) solid 3px;
+    border: var(--color-header-bg) solid 3px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -56,7 +56,7 @@ h1.dark{
     color: #fff;
     transition: 0.5s;
 
-    background-color: var(--color-yellow);
+    background-color: var(--color-button-bg);
 }
 .mode-switch.active::before
 {
@@ -65,8 +65,8 @@ h1.dark{
 
     /*tranforme : horizontal, verticla via parent element*/
     transform: translate(-58px,-50%) rotate(360deg);
-    border: solid 3px var(--color-yellow);
-    background-color: var(--color-blue);
+    border: solid 3px var(--color-button-bg);
+    background-color: var(--color-header-bg);
 }
 
 

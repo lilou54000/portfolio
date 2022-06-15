@@ -1,56 +1,29 @@
-    :root {
-    --background-color: #111;
-    --section-background: #3b3a3a;
-    --text-color: #ededed;
-    --title-color: #50a8d8;
-    }
+ 
+@media screen and (min-width:1440px) { 
 
-
-
-body{
---color-blue:rgb(21, 100,186);
---color-yellow:rgb(238,210,8);
---color-body: rgba(153, 245, 223, 0.3) ;
---color-red:rgb(235, 12,12);
---color-green: rgb(3, 87, 3);
-
-
-
-/*general*/
-font-family: 'Roboto', sans-serif;
-font-size: 20px;
-margin: auto;
-transition:  background 0.5s;
-width: 100%;
-height: max-content;
-
-}
 
 
 
  /*-----------header----------------*/
-header{
-    background-color: var(--color-blue);
-    position:static;
-    font-size: 50px ;
+ header{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    transition:  background 0.5s;
 
 }
 /*intro*/
+#nameforcompu{
+    margin: 10px;
+    width: 90%;
+}
 .iam{
     margin: 10px;
-    display: flex;
-    justify-content: center;
+    top:50px;
+    right: 50px;
 }
 .avatar{
-width: 220px;
-height: 220px;
-border-radius: 120px;
+width: 150px;
+height: 150px;
+border-radius: 70px;
 }
 
 .name{
@@ -92,7 +65,7 @@ ul{
 
 li{
     list-style: none;
-    background-color: var(--color-red);
+    background-color: var(--color-li-title);
     color: white;
     height: 50px;
     width: 180px;
@@ -112,26 +85,13 @@ a{
 }
 
 button{
-background-color: var(--color-yellow);
-border: 0;
-border-radius: 25px;
 
-color: black;
-font-weight: bold;
 font-size: 20px;
-
-height: 40px;
-width: max-content;
 
 padding-right: 10px;
 }
 
 button:hover{
-background-color: var(--color-green);
- color: white;
- font-weight: bold;
- border: 0;
-border-radius: 25px;
 height: 60px;
 width: max-content;
  }
@@ -139,7 +99,10 @@ width: max-content;
 .buttonaction{
     display: flex;
     justify-content: space-around;
-    margin: 15px;
+  
+        align-items: center;
+        width: 50%;
+        margin: auto; 
 }
 
 /*barre modif*/
@@ -167,7 +130,7 @@ width: max-content;
 /*----------langues------*/
 .userfunction{
     font-size: 25px;
-    color: var(--color-blue);
+    color: var(--color-header-bg);
     text-align: center;
     text-decoration: underline;
 }
@@ -176,58 +139,25 @@ width: max-content;
     flex-direction: column;
     gap: 10px;
 }
-
 .speak{
     background-color: white;
-    height: 30px;
-    width: 150px;
-    margin: 5px;
-    border: var(--color-blue) solid 2px;
 }
 
-.Espagnol {
-      background-image: url("spain.png");
-      background-position: center;
-    
-}
-.English{
-    background-image: url("Unitedkingdom.png");
-    background-position: center;
-}
-.Portugues{
-    background-image: url("portugal.png");
-    background-position: center;
 
-}
+
 
  /*------------- main-------------*/
- main{
-   /*  background-color: var(--color-body);*/
-     width: 94%;
-     margin:0;
-     padding: 5px;
-
- }
-
- p{
-     color: black;
-     
- }
 
  section{
      width: 75%;
      margin: 5px;
-     text-align: justify;
      padding: 10px 15px;
-     border: var(--color-blue) solid 10px;
-     border-radius: 25px;
-     background-color: white;
-     transition:  background 0.5s;
+     border: var(--color-header-bg) solid 10px;
+    
  }
 
 .who,.projets, .work{
 float:right;
-
  }
 
  .webForm,.univ, .others
@@ -236,15 +166,10 @@ float:right;
     
      }
 .Titlepart{
-    background-color: var(--color-red);
-    color: white;
-    height: max-content;
-    width: max-content;
+      width: max-content;
     font-size: 25px;
     padding: 5px 10px;
     margin-bottom: 2px;
-    text-align: left;
-    border-radius: 25px;
 }
 
 .date{
@@ -252,7 +177,7 @@ float:right;
     text-decoration: underline;
     margin-top: 10px;
     margin-bottom: 2px;
-    color: var(--color-blue);
+    color: var(--color-header-bg);
 }
 
 .job{
@@ -271,32 +196,23 @@ float:right;
 
 }
 .where{
-    color: var(--color-blue);
     font-size: 18px;
-    text-align: right;
     margin: 1px;
 
 }
 /*-------------description--------------*/
 
 .description{
-     color: var(--color-blue);
      padding: 5px;
      font-size: 20px;
 }
 
 /*--------------webFormation--------------*/
-.webForm{
-    background-color:white;
-}
+
 .oclock{
-    color: var(--color-white);
     font-size: 20px;
-    background-color: var(--color-yellow);
 }
 .oclock:hover{
-    color: var(--color-red);
-    background: none;
     font-size: 25px;
 }
 
@@ -316,8 +232,7 @@ float:right;
     width: 50%;
 }
 .competences{
-    border: var(--color-green) solid 2px;
-    border-radius: 25px;
+    border: var(--color-title-h6) solid 2px;
     margin: 5px ;
     padding: 5px;
     width: max-content;   
@@ -351,9 +266,7 @@ align-items: baseline;
     width: 45%;
 }
 .elementslogo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     margin: auto 2px;
     padding: 2px;
     
@@ -369,8 +282,6 @@ img.logo{
     font-size: 15px;
     padding: 1px;
  
-    color: var(--color-blue);
-    font-weight: bold;
 }
 
 .explicationlogo {
@@ -387,26 +298,13 @@ img.logo{
 }
 /*---------------projet---------------*/
 
-span{
-    font-weight:bold ;
-    color: var(--color-red); }
 h5{
-    color: var(--color-blue);
     font-size: 25px;
-    text-align: center;
     margin: 10px;
 }
 
-#refcode{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 h6{
     font-size: 20px ;
-    text-align: center;
-    text-decoration: underline;
-    color: var(--color-green);
     margin: 5px;
 }
 
@@ -424,24 +322,10 @@ justify-content: space-around;
 }
  /*footer*/
 
-footer{
-    background-color: var(--color-blue);
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-border-top-left-radius: 25px;
-border-top-right-radius: 25px;
-position: static;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
 
 .ML{
     font-size: 30px;
-    color: white;
-    font-weight: bold;
+
 }
 
-
+}
