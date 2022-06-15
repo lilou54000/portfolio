@@ -8,19 +8,26 @@
     <title>Pauline Abadie</title>
 
     <link rel="stylesheet" href="css/cvStyle.css">
-</head>
+    <link rel="stylesheet" href="css/styleTablette.css">
+    <link rel="stylesheet" href="css/style1024.css">
+    <link rel="stylesheet" href="css/style1440.css">
+    <link rel="stylesheet" href="css/darkmode.css">
     
+
+
+</head>
+
 
 <body>
     <header>
-<div id="nameforcompu">
-        <div class="iam">
-           <a href="#menu"> <img src="image/xavatar.jpeg" alt="" class="avatar"> </a>
+        <div id="nameforcompu">
+            <div class="iam">
+                <a href="#menu"> <img src="image/xavatar.jpeg" alt="" class="avatar"> </a>
+            </div>
+            <h1 class="name">Pauline Abadie</h1>
+            <h1 class="fullstack">Développeuse Fullstack junior</h1>
         </div>
-        <h1 class="name">Pauline Abadie</h1>
-        <h1 class="name">Développeuse Fullstack junior</h1>
- </div>       
-  <div class="elements">
+        <div class="elements">
 
             <nav class="menu" id="menu">
                 <ul id="left">
@@ -35,39 +42,54 @@
                     <li><a href="#othersknow">Autres compétences</a></li>
                 </ul>
             </nav>
-            <div class="buttonaction">
-                <button a href='contact.html'>Contactez-moi</a></button>
-               <!-- <a href=scdownload.php></a>-->
-                    <button type="image" src="paulineabadie.cv.png" alt="Submit button"> Téléchargez mon CV</button>
+
+            <div class="buttonaction  firstactions">
+                <button><a href="contact.html"> Contactez-moi</a></button>
+
+                <div class="load center">
+                    <p class="message CV">Télécharger mon CV</p>
+                    <div class="loader"></div>
+                </div>
+
+                <article class="content"></article>
+
             </div>
+        </div>
     </header>
 
     <section class="user">
- <!--darkmode-->
- <h2 id="togg1" class="userfunction">Thème du site</h2>
-        <div class="mode-switch"></div>
+        <!--darkmode-->
+        <div class="UX">
+            <h2 id="togg1" class="userfunction">Thème du site</h2>
+            <div class="mode-switch"></div>
 
-       
-       
+        </div>
         <div id="languages">
-            <h2 id="togg2" class="userfunction">Langue du site</h2>
+            <h2 id="togg2" class="userfunction">Langues du site</h2>
             <div class="UX">
                 <nav class="langues">
-                    <li class="speak Espagnol btnPopup "></li>
-                    <div class="overlay" >
-                        <div class="popup ">
-                        <p>Disponible pronto <span  class="btnClose">&times;</span></p>
-                    </div></div>
-                    <li class="speak English btnPopup"> </li>
-                    <div class="overlay" >
-                    <div class="popup">
-                        <p>Coming soon<span class="btnClose">&times;</span></p>
-                    </div></div>
-                    <li class="speak Portugues btnPopup"></li>
-                    <div class="overlay" >
-                    <div class="popup">
-                        <p class="popup">Em breve <span class="btnClose">&times;</span></p>
-                    </div></div>
+                    <li class="speak  btnPopup " id="flagSpain">
+                        <img src="image/spain.png" class="Espagnol"> </li>
+                    <div class="flag">
+                        <div class="popup" id="commentSpain">
+                            <p class="message">Disponible pronto <span class="btnClose" id="closeCrossSpain">
+                                    &times;</span></p>
+                        </div>
+                    </div>
+                    <li class="speak btnPopup" id="flagUK"> <img src="image/UK.jpeg" class=" English"> </li>
+                    <div class="flag">
+                        <div class="popup" id="commentUK">
+                            <p class="message">Coming soon<span class="btnClose" id="closeCrossUK"> &times;</span></p>
+                        </div>
+                    </div>
+
+
+                    <li class="speak btnPopup" id="flagPortugues"> <img src="image/portugal.png" class=" Portugues">
+                    </li>
+
+                    <div class="popup" id="commentPortugues">
+                        <p class="message">Em breve <span class="btnClose" id="closeCrossPortugues">&times;</span></p>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -77,7 +99,7 @@
     <main>
 
         <!--qui suis je-->
-        <section class="who" >
+        <section class="who">
             <h2 class="Titlepart" id="quisuisje">Qui suis-je</h2>
             <p class="description">Après plusieurs années de travail dans la culture et l'animation auprès du tout
                 public, j'ai choisi de me réorienter dans le développement web, répondant ainsi à ma curiosité, ma
@@ -99,108 +121,112 @@
             <h2 class="Titlepart" id="webform">Formation de webdéveloppeuse</h2>
             <h3 class="date">Décembre 2021 - Mai 2022</h3>
             <h4 class="job"> Formation intensive de développeur web</h4>
-            <p class="where"><a href="https://oclock.io/formations/developpeur-web" class="oclock"> Ecole O'Clock </a>
+            <!--target pour ouvrir un onglet a part-->
+            <p class="where"><a href="https://oclock.io/formations/developpeur-web" target="_blank" class="oclock">
+                    Ecole O'Clock </a>
             </p>
             <div id="ensembletechno">
-           <div id="listtechno">
-            <div class="competences socle">
-                <h6> Socle </h6>
-                <div class="logosalign ">
-                    <div class="elementslogo"> <img src="image/html.png" alt="logo html" class="logo">
-                        <p class="namelogo"> HTML</p>
+                <div id="listtechno">
+                    <div class="competences socle">
+                        <h6> Socle </h6>
+                        <div class="logosalign ">
+                            <div class="elementslogo"> <img src="image/html.png" alt="logo html" class="logo">
+                                <p class="namelogo"> HTML</p>
+                            </div>
+                            <div class="elementslogo"> <img src="image/css.png" alt="logo css" class="logo">
+                                <p class="namelogo">CSS </p>
+                            </div>
+                            <div class="elementslogo"> <img src="image/php.png" alt="logo php" class="logo">
+                                <p class="namelogo">PHP </p>
+                            </div>
+                            <div class="elementslogo"> <img src="image/js.png" alt="logo js" class="logo">
+                                <p class="namelogo">JavaScript</p>
+                            </div>
+                            <div class="elementslogo"> <img src="image/mysql.png" alt="logo mysql" class="logo">
+                                <p class="namelogo">MySQL </p>
+                            </div>
+                            <div class="elementslogo"> <img src="image/bootstrap.jpg" alt="logo bootstrap" class="logo">
+                                <p class="namelogo">Bootstrap</p>
+                            </div>
+                            <div class="elementslogo"> <img src="image/linux.jpg" alt="logo linus" class="logo">
+                                <p class="namelogo">Linux</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="elementslogo"> <img src="image/css.png" alt="logo css" class="logo">
-                        <p class="namelogo">CSS </p>
-                    </div>
-                    <div class="elementslogo"> <img src="image/php.png" alt="logo php" class="logo">
-                        <p class="namelogo">PHP </p>
-                    </div>
-                    <div class="elementslogo"> <img src="image/js.png" alt="logo js" class="logo">
-                        <p class="namelogo">JavaScript</p>
-                    </div>
-                    <div class="elementslogo"> <img src="image/mysql.png" alt="logo mysql" class="logo">
-                        <p class="namelogo">MySQL </p>
-                    </div>
-                    <div class="elementslogo"> <img src="image/bootstrap.jpg" alt="logo bootstrap" class="logo">
-                        <p class="namelogo">Bootstrap</p>
-                    </div>
-                    <div class="elementslogo"> <img src="image/linux.jpg" alt="logo linus" class="logo">
-                        <p class="namelogo">Linux</p>
-                    </div>
-                </div>
-            </div>
-            
-         <div  class="competences2" id="techknow">   
-             <div class="competences">
-                <h6>Spécialisation</h6>
-                <div class="logosalign">
-                    <div class="elementslogo"> <img src="image/wordpress.jpeg" alt="logo wordpress" class="logo">
-                        <p class="namelogo"> Wordpress </p>
-                    </div>
-                    <div class="elementslogo"> <img src="image/vuejs.jpeg" alt="logo vuejs" class="logo">
-                        <p class="namelogo"> Vue.js</p>
-                    </div>
-                </div>
-            </div>
-            <div class="competences tutoriel">
-                <h6>En cours d'apprentissage via des tutoriels</h6>
-                <div class="logosalign">
-                    <div class="elementslogo"> <img src="image/react.png" alt="logo react" class="logo">
-                        <p class="namelogo">React</p>
-                    </div>
-                    <div class="elementslogo"> <img src="image/symfony.jpeg" alt="logo symfony" class="logo">
-                        <p class="namelogo">Symfony </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-            <div class="competences">
-                <h6>Autres outils</h6>
-                <div class="logosalign">
 
-                     <div class="elementslogo ">
-                         <p class="explicationlogo"> Gestion de projet avec la méthode AGIL </p>
-                                                           <div class="AGIL">
-                            <div class="elementslogo">
-                                <img src="image/trello.jpeg" alt="logo Trello" class="logo">
-                                <p class="namelogo">Trello </p>
+                    <div class="competences2" id="techknow">
+                        <div class="competences">
+                            <h6>Spécialisation</h6>
+                            <div class="logosalign">
+                                <div class="elementslogo"> <img src="image/wordpress.jpeg" alt="logo wordpress"
+                                        class="logo">
+                                    <p class="namelogo"> Wordpress </p>
+                                </div>
+                                <div class="elementslogo"> <img src="image/vuejs.jpeg" alt="logo vuejs" class="logo">
+                                    <p class="namelogo"> Vue.js</p>
+                                </div>
                             </div>
-                            <div class="elementslogo">
-                                <img src="image/git.png" alt="logo git" class="logo">
-                                <p class="namelogo"> GIT</p>
-                            </div>
-                            <div class="elementslogo">
-                                <img src="image/slack.png" alt="logo Slack" class="logo">
-                                <p class="namelogo">Slack</p>
+                        </div>
+                        <div class="competences tutoriel">
+                            <h6>En cours d'apprentissage via des tutoriels</h6>
+                            <div class="logosalign">
+                                <div class="elementslogo"> <img src="image/react.png" alt="logo react" class="logo">
+                                    <p class="namelogo">React</p>
+                                </div>
+                                <div class="elementslogo"> <img src="image/symfony.jpeg" alt="logo symfony"
+                                        class="logo">
+                                    <p class="namelogo">Symfony </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="competences">
+                    <h6>Autres outils</h6>
+                    <div class="logosalign">
 
-                <div class="elementslogo">
-                    <p class="explicationlogo"> Conception des documents techniques : userstories, wireframe...</p>
-                    <div class="AGIL">
-                        <div class="elementslogo">
-                            <img src="image/whismical.jpeg" alt="logo Whimsical" class="logo">
-                            <p class="namelogo"> Whimsical</p>
-                        </div>
-                        <div class="elementslogo"> <img src="image/adobeillustrator.png" alt="logo adobeillustrator"
-                                class="logo">
-                            <p class="namelogo">Adobe Illustrator </p>
-                        </div>
-                        <div class="elementslogo"> <img src="image/gimp.jpg" alt="logo gimp" class="logo">
-                            <p class="namelogo">GIMP </p>
+                        <div class="elementslogo ">
+                            <p class="explicationlogo"> Gestion de projet avec la méthode AGIL </p>
+                            <div class="AGIL">
+                                <div class="elementslogo">
+                                    <img src="image/trello.jpeg" alt="logo Trello" class="logo">
+                                    <p class="namelogo">Trello </p>
+                                </div>
+                                <div class="elementslogo">
+                                    <img src="image/git.png" alt="logo git" class="logo">
+                                    <p class="namelogo"> GIT</p>
+                                </div>
+                                <div class="elementslogo">
+                                    <img src="image/slack.png" alt="logo Slack" class="logo">
+                                    <p class="namelogo">Slack</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="elementslogo">
-                    <p class="explicationlogo">Connaissance et usage de l'ensemble des applications Google </p><img
-                        src="image/google.png" alt="logo google" class="logo">
-                </div>
 
+                    <div class="elementslogo">
+                        <p class="explicationlogo"> Conception des documents techniques : userstories, wireframe...</p>
+                        <div class="AGIL">
+                            <div class="elementslogo">
+                                <img src="image/whismical.jpeg" alt="logo Whimsical" class="logo">
+                                <p class="namelogo"> Whimsical</p>
+                            </div>
+                            <div class="elementslogo"> <img src="image/adobeillustrator.png" alt="logo adobeillustrator"
+                                    class="logo">
+                                <p class="namelogo">Adobe Illustrator </p>
+                            </div>
+                            <div class="elementslogo"> <img src="image/gimp.jpg" alt="logo gimp" class="logo">
+                                <p class="namelogo">GIMP </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementslogo">
+                        <p class="explicationlogo">Connaissance et usage de l'ensemble des applications Google </p><img
+                            src="image/google.png" alt="logo google" class="logo">
+                    </div>
+
+                </div>
             </div>
-  </div>   
         </section>
 
         <!--projet perso-->
@@ -215,36 +241,43 @@
             <div class="refcode">
                 <img src="image/html.png" alt="" class="technoUse">
                 <img src="image/css.png" alt="" class="technoUse">
-                 <img src="image/js.png" alt="" class="technoUse">
-                 <a href="#"><img src="./git.png" alt="Lien vers le code du projet" class="logocode"></a>
+                <img src="image/js.png" alt="" class="technoUse">
+                <a href="#"><img src="image/git.png" alt="Lien vers le code du projet" class="logocode"></a>
             </div>
-            <p class="what">Ce premier projet réellement personnel avait pour but de m'aider à retravailler le CSS et le JS. Les deux semaines de travail qu'il a représenté m'ont permis de revoir des vidéos d'explication, de recomprendre les notions de fonction et de découvrir de nouveaux effets en css.</p>
+            <p class="what">Ce premier projet réellement personnel avait pour but de m'aider à retravailler le CSS et le
+                JS. Les deux semaines de travail qu'il a représenté m'ont permis de revoir des vidéos d'explication, de
+                recomprendre les notions de fonction et de découvrir de nouveaux effets en css.</p>
             <img src="#" alt="#" class="miniature" a href="#">
 
             <h5>Merci O</h5>
             <div class="refcode">
                 <img src="image/html.png" alt="" class="technoUse">
                 <img src="image/css.png" alt="" class="technoUse">
-                 <img src="image/js.png" alt="" class="technoUse">
-                 <img src="image/wordpress.jpeg" alt="" class="technoUse">
-                 <a href="#"><img src="image/git.png" alt="Lien vers le code du projet" class="logocode"></a>
+                <img src="image/js.png" alt="" class="technoUse">
+                <img src="image/wordpress.jpeg" alt="" class="technoUse">
+                <a href="#"><img src="image/git.png" alt="Lien vers le code du projet" class="logocode"></a>
             </div>
-            <p class="what">Ce projet de fin de formation a cumulé les difficultés. Mon binôme et moi-même n'ayant pu que travailler à mi-temps dès le départ, nous avons surtout décidé d'en profiter pour revoir les notions de bases de wordpress et comprendre le fonctionnement de GIT. J'ai réalisé l'ensemble du css et du responsive final,ayant confié le back à mon binôme. Ce projet sera prochainement repris et amélioré.</p>
-            <img src="image/wordpress.jpeg" alt="#" class="miniature" a href="#">
-            
+            <p class="what">Ce projet de fin de formation a cumulé les difficultés. Mon binôme et moi-même n'ayant pu
+                que travailler à mi-temps dès le départ, nous avons surtout décidé d'en profiter pour revoir les notions
+                de bases de wordpress et comprendre le fonctionnement de GIT. J'ai réalisé l'ensemble du css et du
+                responsive final,ayant confié le back à mon binôme. Ce projet sera prochainement repris et amélioré.</p>
+            <img src="_" alt="#" class="miniature" a href="#">
+
         </section>
 
 
         <!--univ-->
         <section class="univ">
-            <h2 class="Titlepart" id="univknow">Formation académique</h2> <h3 class="date">Mars- Juin 2016</h3></p>
+            <h2 class="Titlepart" id="univknow">Formation académique</h2>
+            <h3 class="date">Mars- Juin 2016</h3>
+
             <h4 class="job"> Formation professionnelle Cheffe de Projets Culturels et Événementiels</h4>
             <p class="where"> Agence Européenne du Management Culturel Paris (75)</p>
- <h3 class="date"> 2011-2014 </h3>
+            <h3 class="date"> 2011-2014 </h3>
             <h4 class="job"> Master Management et Ingénierie du Développement des Territoires en Europe</h4>
             <h4 class="job"> Licence Langues Étrangères Appliquées Anglais-Espagnol- Portugais</h4>
             <p class="where"> Université de Bretagne Occidentale Brest (29)</p>
-     <h3 class="date">2009-2011</h3>
+            <h3 class="date">2009-2011</h3>
             <h4 class="job"> Licence Géographie Aménagement du Territoire</h4>
             <p class="where"> Université Nancy 2 Nancy (54)</p>
         </section>
@@ -259,8 +292,8 @@
             <p class="what"> Gestion des programmes académiques et des événements</p>
             <p class="where"> Santa Cruz – Bolivie</p>
 
-             
- <h3 class="date">Janvier-Novembre 2017</h3>
+
+            <h3 class="date">Janvier-Novembre 2017</h3>
             <h4 class="job"> Coordinatrice d'une tournée nationale de théâtre avec la troupe bolivienne El Altoteatro
             </h4>
 
@@ -269,7 +302,7 @@
             <p class="what"> Réalisation d'une partie de la communication.</p>
             <p class="where"> Association LaTal ; Latinos Talentos - France</p>
 
-               <h3 class="date">Juin 2016- octobre 2017 </h3>
+            <h3 class="date">Juin 2016- octobre 2017 </h3>
             <h4 class="job"> Médiatrice culturelle, chargée d’accueil du public</h4>
             <p class="where"> Association Le 6B -Saint Denis (93)</p>
 
@@ -277,7 +310,7 @@
             <p class="what"> Rédaction de dossiers de subvention, suivi des actions, conseils.</p>
             <p class="where"> Paris (75)</p>
 
-               <h3 class="date">Avril - Septembre 2014 </h3>
+            <h3 class="date">Avril - Septembre 2014 </h3>
             <h4 class="job"> Coordinatrice de projets culturels et de développement économique.</h4>
 
             <p class="what"> Accompagnement de lycéens dans la conception d’animations culturelles </p>
@@ -286,14 +319,14 @@
             <p class="where"> Juliaca -Pérou</p>
             <p class="where"> Comité des Électriciens et Gaziers du Secours Populaire Paris Grande Couronne </p>
 
-                <h3 class="date">Juillet 2007 – Juin 2017 </h3>
+            <h3 class="date">Juillet 2007 – Juin 2017 </h3>
             <h4 class="job"> Animatrice BAFA et Directrice.</h4>
 
             <p class="what"> Classes de découverte, Séjour de vacances, Foyer, enfants, pré-adolescents et adolescents,
                 publics en situation de handicap.</p>
             <p class="where"> France et Europe</p>
 
-                <h4 class="job">Autres expériences diverses depuis 2006 </h4>
+            <h4 class="job">Autres expériences diverses depuis 2006 </h4>
             <p class="what "> - secrétaire administrative</p>
             <p class="what"> - assistante en agence de construction d'écologement</p>
             <p class="what"> - interprète franco-espagnole </p>
@@ -305,33 +338,37 @@
         <!--autres competence-->
         <section class="others">
             <h2 class="Titlepart" id="othersknow">Autres compétences</h2>
-        <div class="blocknow"> 
+            <div class="blocknow">
                 <div class="blocknow1">
-                <h4 class="job"> Langues </h4>
-                <p class="what "> <span>Anglais :</span> B1-B2</p>
-                <p class="what "> <span>Espagnol :</span> C1-C2</p>
-                <p class="what "><span>Portuguais :</span> B1</p>
+                    <h4 class="job"> Langues </h4>
+                    <p class="what "> <span>Anglais :</span> B1-B2</p>
+                    <p class="what "> <span>Espagnol :</span> C1-C2</p>
+                    <p class="what "><span>Portuguais :</span> B1</p>
+                </div>
+                <div class="blocknow2">
+                    <h4 class="job"> Savoirs-être</h4>
+                    <p class="what ">- Perséverante et investie dans mon travail</p>
+                    <p class="what ">- Force de propositions et d'initiatives</p>
+                    <p class="what ">- Organisée et autonome</p>
+                    <p class="what ">- Appréciant le travail d'équipe </p>
+                    <p class="what ">- Curieuse et demandeuse d'apprentissage constant</p>
+                </div>
             </div>
-            <div class="blocknow2">
-                <h4 class="job"> Savoirs-être</h4>
-                <p class="what ">- Perséverante et investie dans mon travail</p>
-                <p class="what ">- Force de propositions et d'initiatives</p>
-                <p class="what ">- Organisée et autonome</p>
-                <p class="what ">- Appréciant le travail d'équipe </p>
-                <p class="what ">- Curieuse et demandeuse d'apprentissage constant</p>
-            </div>
-        </div>
         </section>
     </main>
 
 
     <footer>
         <p class="ML"> Mentions légales</p>
-        <a href=.contact.html><button>Contactez-moi</button></a>
+        <button><a href="contact.html"> Contactez-moi</a></button>
 
     </footer>
 
-    <script src="main.js"> </script>
+    <script src="app.js"></script>
+    <script src="popup.js"></script>
+    <script src="darkMode.js"></script>
+    <script src="telechargement.js"></script>
+
 </body>
 
 </html>
